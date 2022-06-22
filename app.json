@@ -1,0 +1,87 @@
+{
+    "name": "𝙎𝙊𝙐𝙍𝘾𝙀 𝙊𝙒𝙎 @W_EL_SO_N",
+    "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
+    "logo": "https://telegra.ph/file/19d89a442b53789ef981f.jpg",
+    "keywords": [
+        "pytgcalls",
+        "telegram bot",
+        "video stream",
+        "pyrogram"
+    ],
+    "website": "https://t.me/W_EL_SO_N",
+    "repository": "https://github.com/dgxggxgxxh/ows",
+    "success_url": "https://t.me/W_EL_SO_N",
+    "env": {
+        "API_ID": {
+            "description": "your ايبي ايدي from my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "your ايبي هاش from my.telegram.org",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "your  توكن بوت from @BotFather",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "your  يوزر البوت from @BotFather",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "fill with your اسم البوت from @BotFather",
+            "required": true
+        },
+        "ASSISTANT_NAME": {
+            "description": "fill with the يوزر المساعد بدون @",
+            "required": true
+        },
+        "SESSION_NAME": {
+            "description": "fill with the كود بايروجرام",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "ايدي المطور",
+            "required": true
+        },
+        "GROUP_SUPPORT": {
+            "description": "if you have group, then  جروب دعم بدون @",
+            "required": true,
+            "value": "BAROXIDIYA"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "if you have channel, then  يوزر القناه بدون @",
+            "required": true,
+            "value": "W_EL_SO_N"
+        },
+        "OWNER_NAME": {
+            "description": "fill with your telegram يوزر المطور بدون @",
+            "required": true,
+            "value": "DEV_WELSON"
+        },
+        "ALIVE_NAME": {
+            "description": "fill with your telegram account nickname/name",
+            "required": true,
+            "value": "𝗦َ𝙤𝙐𝙧𝘾𝙚َ 𝙤𝘄َ𝗦َ"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
